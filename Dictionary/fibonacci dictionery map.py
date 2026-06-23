@@ -15,7 +15,7 @@ try:
     else:
         get_fibonacci(count - 1)
         
-        print("Here is your Fibonacci map:")
+        print("Here is your Fibonacci numbers:")
         for position in range(count):
             print(f"{position} -> {fib_cache[position]}")
 
