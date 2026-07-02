@@ -10,15 +10,12 @@ def student_manager():
         choice = input("Enter choice: ")
 
         if choice == "1":
-
-            # Roll Number Validation
             try:
                 roll = int(input("Roll Number: "))
             except ValueError:
                 print("Roll Number must be an integer.")
                 continue
 
-            # Name Validation
             name = input("Student Name: ").strip()
 
             if not name.replace(" ", "").isalpha():
